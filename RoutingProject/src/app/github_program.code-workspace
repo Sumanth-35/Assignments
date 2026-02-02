@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Keysight_React"
+		},
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../flight-management-system"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Angular_Programs"
+	}
+}

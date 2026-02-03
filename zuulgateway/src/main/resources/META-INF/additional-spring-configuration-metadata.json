@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "zuul.routes.greetingsinfofeignclient.stripPrefix",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.routes.greetingsinfofeignclient.stripPrefix'"
+  },
+  {
+    "name": "eureka.client.serviceUrl.defaultZone",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.client.serviceUrl.defaultZone'"
+  },
+  {
+    "name": "greetingsinfofeignclient.stripPrefix",
+    "type": "java.lang.String",
+    "description": "A description for 'greetingsinfofeignclient.stripPrefix'"
+  }
+]}

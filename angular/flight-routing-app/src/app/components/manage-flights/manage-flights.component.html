@@ -1,0 +1,50 @@
+<h3>Manage Flights</h3>
+
+<table class="flight-table">
+  <tr>
+    <th>Flight No</th>
+    <th>Airline</th>
+    <th>Status</th>
+    <th>Actions</th>
+  </tr>
+
+  <tr *ngFor="let flight of flights">
+    <td>
+      <input *ngIf="editFlightId === flight.id"
+             [(ngModel)]="flight.flightNo">
+      <span *ngIf="editFlightId !== flight.id">
+        {{ flight.flightNo }}
+      </span>
+    </td>
+
+    <td>{{ flight.airline }}</td>
+
+    <td>
+      <span [class]="flight.status.replace(' ','-')">
+        {{ flight.status }}
+      </span>
+    </td>
+
+    <td class="actions">
+      <button class="btn green" (click)="markOnTime(flight.id)">On Time</button>
+      <button class="btn orange" (click)="markDelayed(flight.id)">Delay</button>
+      <button class="btn red" (click)="cancelFlight(flight.id)">Cancel</button>
+
+      <button class="btn blue"
+              *ngIf="editFlightId !== flight.id"
+              (click)="enableEdit(flight.id)">
+        Edit
+      </button>
+
+      <button class="btn save"
+              *ngIf="editFlightId === flight.id"
+              (click)="saveEdit(flight)">
+        Save
+      </button>
+
+      <button class="btn delete" (click)="deleteFlight(flight.id)">Delete</button>
+    </td>
+  </tr>
+</table>
+<div *ngIf="flights.length === 0">
+  No flights available.

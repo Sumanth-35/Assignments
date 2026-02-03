@@ -1,0 +1,9 @@
+<h2>Product Details</h2>
+<div *ngIf="product">
+  <p> Name: {{product.name}}</p>
+    <p> Price: INR.{{product.price}}</p>
+</div>
+<div *ngIf="!product">
+  <p>Product not found!</p>
+  </div>
+  

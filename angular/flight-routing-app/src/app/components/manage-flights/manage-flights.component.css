@@ -1,0 +1,41 @@
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.flight-table th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+}
+
+.flight-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+}
+
+.green { background-color: #27ae60; }
+.orange { background-color: #f39c12; }
+.red { background-color: #c0392b; }
+.blue { background-color: #2980b9; }
+.save { background-color: #16a085; }
+.delete { background-color: #7f8c8d; }
+
+.On-Time { color: green; font-weight: bold; }
+.Delayed { color: orange; font-weight: bold; }
+.Cancelled { color: red; font-weight: bold; }

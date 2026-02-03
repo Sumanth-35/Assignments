@@ -1,0 +1,20 @@
+<div class="card">
+  <h3>Add New Flight</h3>
+
+  <form class="flight-form">
+    <input placeholder="Flight No" [(ngModel)]="newFlight.flightNo" name="flightNo">
+    <input placeholder="Airline" [(ngModel)]="newFlight.airline" name="airline">
+    <input placeholder="From" [(ngModel)]="newFlight.source" name="source">
+    <input placeholder="To" [(ngModel)]="newFlight.destination" name="destination">
+    <input placeholder="Time" [(ngModel)]="newFlight.time" name="time">
+    <input type="number" placeholder="Price" [(ngModel)]="newFlight.price" name="price">
+
+    <select [(ngModel)]="newFlight.status" name="status">
+      <option>On Time</option>
+      <option>Delayed</option>
+      <option>Cancelled</option>
+    </select>
+
+    <button type="button" (click)="addFlight()">Add Flight</button>
+  </form>
+</div>
